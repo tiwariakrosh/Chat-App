@@ -18,7 +18,7 @@ export const AuthProvider = ({ children }) => {
             if (user) history('/chats');
         })
 
-    }, [user]);
+    }, [user, history]);
 
     const value = { user };
 
